@@ -1,0 +1,14 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int a, int b) {
+    string answer1, answer2;
+    answer1 = to_string(a).append(to_string(b));
+    answer2 = to_string(b).append(to_string(a));
+    if(stoi(answer1)>=stoi(answer2))
+        return stoi(answer1);
+    else
+        return stoi(answer2);
+}
